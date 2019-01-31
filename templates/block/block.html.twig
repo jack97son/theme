@@ -1,0 +1,37 @@
+
+    {% if block.delta != 'main' %}
+    {%
+      set classes = [
+        'block',
+        'block-' ~ configuration.provider|clean_class,
+        'block-' ~ plugin_id|clean_class,
+      ]
+    %}
+    <div id="prueba-bloque">
+      <div class="prueba-bloque2">
+    <section{{ attributes.addClass(classes) }}>
+      {% endif %}
+    
+      {{ title_prefix }}
+      {% if label %}
+        <h4 {{ title_attributes }}>{{ label }}</h4>
+      {% endif %}
+      {{ title_suffix }}
+    
+      {% if content_attributes|length %}
+      <div {{ content_attributes }}>
+        {% endif %}
+    
+        {% block content %}
+          {{ content }}
+        {% endblock %}
+    
+        {% if content_attributes|length %}
+      </div>
+      {% endif %}
+    
+      {% if block.delta != 'main' %}
+    </section>
+    {% endif %}
+      </div>
+    </div>

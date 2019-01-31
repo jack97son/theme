@@ -1,0 +1,13 @@
+
+    <span{{ attributes }}>
+      {%- for item in items -%}
+        {{ item.content }}
+      {%- endfor -%}
+    </span>
+
+    {% if item.header %}
+      <h1 class="title"></h1>
+        {{ item.header }}
+      </h1>
+    {% endif %}  
+    

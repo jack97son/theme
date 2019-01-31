@@ -1,0 +1,29 @@
+name: Desde Cero
+description: Mi primer tema!
+core: '8.x'
+project: 'desde_cero'
+type: theme
+version: '8.x-6.0'
+
+screenshot: images/screenshot.jpg
+
+libraries:
+  - desdecero/ejemplo
+
+regions:
+
+  #Header
+  header: Header
+
+  #Global region
+  highlighted: Highlighted
+  page_title: 'Page title'
+  content: Content
+  sidebar_first: 'Left sidebar'
+  sidebar_second: 'Right sidebar'
+  sidebar: 'Sidebar'
+
+  #Footer widgets
+  footer_first: 'Footer first widget'
+  footer_second: 'Footer second widget'
+  footer_third: 'Footer third widget'

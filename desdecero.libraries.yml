@@ -1,0 +1,9 @@
+ejemplo:
+  version: VERSION
+  css:
+    base:
+      css/app.css: {}
+  js:
+    js/app.js: {}
+  dependencies:
+    - core/drupal
