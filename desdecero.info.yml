@@ -14,10 +14,11 @@ regions:
 
   #Header
   header: Header
+  primary_menu: 'Primary menu'
+  top_menu: 'Top menu'
 
   #Global region
   highlighted: Highlighted
-  page_title: 'Page title'
   content: Content
   sidebar_first: 'Left sidebar'
   sidebar_second: 'Right sidebar'
@@ -27,3 +28,8 @@ regions:
   footer_first: 'Footer first widget'
   footer_second: 'Footer second widget'
   footer_third: 'Footer third widget'
+
+  #Features widgets
+  features_first: 'Features first widget'
+  features_second: 'Features second widget'
+  features_third: 'Features third widget'

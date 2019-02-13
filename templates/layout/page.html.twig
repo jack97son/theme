@@ -1,114 +1,150 @@
 
-  <div class="layout-container">
-    
-    <!-- Start: Header -->
-    <div class="header">
-      {% if page.header %}
-      {{ page.header }}
-      {% endif %}
-    </div> 
-    <!-- End: Header -->
-  </div>
+  <div class="background-header">
+    <div class="layout-container">
+      <div class="row">
+      
+      <!-- Start: Header -->
+      <div class="header">
+        {% if page.header %}
+        {{ page.header }}
+        {% endif %}
+      </div> 
+      <!-- End: Header -->
 
-<br>
+      <div class="menu-principal">
+      {% if page.primary_menu %}
+        {{page.primary_menu}}
+      {% endif %}  
+      </div>
+
+      <div class="top-menu">
+      {% if page.top_menu %}
+        {{page.top_menu}}
+      {% endif %}  
+    </div>
+
+    </div>
+  </div>
 
     <!--Start: Highlighted -->
     {% if page.highlighted %}
-      <div class="highlighted">
-        <div class="container">
+        <div class="container-highlighted">
           {{ page.highlighted }}
         </div>
-      </div>
     {% endif %}
     <!--End: Highlighted -->
 
-<br>
-
-    <!--Start: Title -->
-    {%  if page.page_title and not is_front %}
-      <div id="page-title">
-        <div id="page-title-inner">
-          <div class="container">
-            {{ page.page_title }}
-          </div>
-        </div>
-      </div>
-    {% endif %}
-    <!--End: Title -->
-
-<br>
+  </div>
 
     <!--- Start Content -->
     {% if page.content %}
-      <div>
         <main role="main">
           <a id="main-content"></a>
           <div class="layout-content">
             {{ page.content }}
           </div>
         </main>
-      </div> 
     {% endif %}
     <!-- End: Content -->
 
-<br>
 
-    <!--- Start: Left SideBar -->
-      {% if page.sidebar_first %}
-        <div class={{sidebarfirst}}>
-          <div class="sidebar">
-            {{ page.sidebar_first }}
+    <!-- Start: Features -->
+
+      {% if page.features_first or page.features_second or page.features_third %}
+
+        <div class="features">
+          <div class="container">
+            <div class="row-features">
+
+               <!--- Start: Left SideBar -->
+              {% if page.sidebar_first %}
+                <div class="sidebarfirst">
+                  <div class="sidebar">
+                    {{ page.sidebar_first }}
+                  </div>
+                </div>
+              {% endif %}
+              <!-- End Left SideBar -->
+
+              <!-- Start: Features First -->
+              {% if page.features_first %}
+                <div class ="feature-1">
+                  {{ page.features_first }}
+                </div>
+              {% endif %}
+              <!-- End: Features First -->
+
+              <!-- Start :Features Second -->
+              {% if page.features_second %}
+                <div class ="feature-2">
+                  {{ page.features_second }}
+                </div>
+              {% endif %}
+              <!-- End: Features Second -->
+
+              <!-- Start: Features third -->
+              {% if page.features_third %}
+                <div class ="feature-3">
+                  {{ page.features_third }}
+                </div>
+              {% endif %}
+              <!-- End: Features Third -->
+
+              <!-- Start: Right SideBar -->
+              {% if page.sidebar_second %}
+                <div class="sidebarsecond">
+                  <div class="sidebar">
+                    {{ page.sidebar_second }}
+                  </div>
+                </div>
+              {% endif %}
+              <!-- End: Right SideBar -->
+
+            </div>
           </div>
         </div>
+
       {% endif %}
-    <!-- End Left SideBar -->
 
-<br>
+    <!--End: Features -->
 
-    <!-- Start: Right SideBar -->
-      {% if page.sidebar_second %}
-        <div class={{sidebarsecond}}>
-          <div class="sidebar">
-            {{ page.sidebar_second }}
-          </div>
-        </div>
-      {% endif %}
-    <!-- End: Right SideBar -->
-
-<br>
-
+<div class="background-header">
 {% if page.footer_first or page.footer_second or page.footer_third %}
 
 <div class="footer" id="footer">
   <div class="container">
     <div class="parallax-region wow- bounceInUp">  
-      <div class="row">
+      <div class="row-footer">
 
         <!-- Start: Footer First -->
         {% if page.footer_first %}
-          <div class = {{ footer_class }}>
-            {{ page.footer_first }}
-          </div>
+          <div class="footer-1">
+            <div class = {{ footer_class }}>
+              {{ page.footer_first }}
+            </div>
+        </div>
         {% endif %}
         <!-- End: Footer First -->
 
-<br>
 
         <!-- Start :Footer Second -->
         {% if page.footer_second %}
+        <div class="footer-2">
           <div class = {{ footer_class }}>
             {{ page.footer_second }}
           </div>
+        </div>
         {% endif %}
         <!-- End: Footer Second -->
 
-<br>
 
         <!-- Start: Footer third -->
         {% if page.footer_third %}
+        <div class="footer-3">
           <div class = {{ footer_last_class }}>
             {{ page.footer_third }}
           </div>
+        </div>  
         {% endif %}
         <!-- End: Footer Third -->
 
@@ -119,7 +155,4 @@
 
 {% endif %}
 
-
-
-
-
+</div>
