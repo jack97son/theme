@@ -17,7 +17,7 @@
 }
 
 .background-header {
-    background-image: url("../images/47266.jpg");
+    background-image: url("../images/cinta.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -31,9 +31,9 @@
 }
 
 #block-bloqueportadadebajoheader p, h1, pre {
-    font-size: 50px;
+    font-size: 31px;
     padding: 65px;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 
 .js-quickedit-page-title {
@@ -43,15 +43,23 @@
 }
 
 .prueba {
-    background: rgb(172, 47, 47);
+    /* background: linear-gradient(270deg, #99cc99, #6699cc, #cc6699, #cccc99);
+    background-size: 600% 600%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite; */
     padding: 100px;
     font-family: sans-serif;
     font-size: 20px;
 
 }
 
+.prueba div {
+    display: inline;
+}
+
 .home {
-    background-color: red:
+    background-color: red;
 }
 
 .prueba-vista {
@@ -91,6 +99,25 @@ a {
     height: 70px;
 }
 
+.content_layout {
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', sans-serif;
+    vertical-align: baseline;
+    word-wrap: break-word;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.block-region {
+    background-color: #ff6;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding: 3px;
+    text-align: center;
+}
+
 /* bloque dentro de header-top */
 .layout-container {
     position: relative;
@@ -107,10 +134,6 @@ a {
 
 .ihe-overlay--zoom {
     margin: 10px;
-}
-
-.views-row {
-    display: flex;
 }
 
 .views-col {
@@ -147,7 +170,7 @@ a {
     /* border: 1px solid rgb(155, 152, 152); */
     margin: 10px;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 15px;
     text-align: center;
     background: linear-gradient(-45deg, rgb(77, 72, 72, 0), #e3e4e5, rgb(77, 72, 72, 0), #ffffff);
 	background-size: 400% 400%;
@@ -156,6 +179,7 @@ a {
     animation: Gradient 15s ease infinite;
     animation: slider 15s infinite linear;
 }
+
 
 @keyframes slider {
     to {
@@ -179,6 +203,35 @@ a {
     background-color: #CBF7F7;
 }
 
+.col-md-4 {
+    margin: 4%;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Georgia', sans-serif;
+}
+
+.col-md-4:hover {
+    -webkit-box-shadow: 0px 0px 51px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 51px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 51px -4px rgba(0,0,0,0.75);
+    background-color: #CBF7F7;
+}
+
+#block-desdecero-views-block-lista-de-episodios-block-1 h2, select, option {
+    margin: 0;
+    font-family: 'Georgia', sans-serif;
+}
+
+#block-desdecero-views-block-lista-de-episodios-block-1 select {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 10%;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #2da661;
+    border: 2px solid;
+}
 
 .none-body {
     margin: 0;
@@ -262,6 +315,10 @@ a {
     width: 626px;
 }
 
+.prueba-bloque-dentro h2 {
+    font-size: 55px;
+}
+
 .prueba-bloque-dentro .block-favorites-list {
     -webkit-box-shadow: 12px 10px 22px 2px rgba(133,121,133,1);
     -moz-box-shadow: 12px 10px 22px 2px rgba(133,121,133,1);
@@ -284,11 +341,6 @@ a {
     -moz-border-radius: 96px 0px 149px 0px;
     -webkit-border-radius: 96px 0px 149px 0px;
     border: 0px solid #000000;
-}
-
-.block-views-blocklista-de-episodios-block-1 {
-    background-color: bisque;
-
 }
 
 .block-favorites-list button:hover , input:hover {
@@ -355,7 +407,6 @@ a {
     margin: 0;
     border: 0;
     padding: 10px;
-    width: 100%;
     text-align: center;
     display: inline;
 }
@@ -364,7 +415,6 @@ a {
     margin: 0;
     border: 0;
     padding: 10px;
-    width: 100%;
     border-right: 2px solid red;
     display: inline;
 }
@@ -376,7 +426,7 @@ a {
 }
 
 .menu-visually ul {
-    display: flex;
+    display: inline-flex;
 }
 
 .prueba-menu li {
@@ -489,6 +539,7 @@ a {
 
 .sidebarfirst {
     display:inline;
+    margin-right: 8%;
 }
 
 table {
@@ -570,35 +621,6 @@ table {
     width: auto;
     margin-right: 8%;
 }
-
-.feature-1 {
-}
-
-/* feature 2 */
-.feature-2 {
-}
-
-/* feature 3 */
-.feature-3 {
-}
-
-/* region-content-menu */
-
-/* .region-content {
-    border: 0;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-	font-family: 'Georgia', sans-serif;
-    vertical-align: baseline;
-    word-wrap:break-word;
-    text-align:center;
-    background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(250,32,32,1) 50%, rgba(17,19,20,1) 100%);
-    padding:10px 10px;
-    border-radius:10px;
-    position: relative;
-    margin: 50px 100px 50px 100px;
-} */
 
 .region-highlighted {
     margin-top: 0;

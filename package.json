@@ -1,0 +1,25 @@
+{
+  "name": "desdecero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jack97son/theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jack97son/theme/issues"
+  },
+  "homepage": "https://github.com/jack97son/theme#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2"
+  }
+}

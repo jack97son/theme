@@ -38,14 +38,13 @@
 
     <!--- Start Content -->
     {% if page.content %}
-        <main role="main">
-          <a id="main-content"></a>
-          <div class="layout-content">
-            {{ page.content }}
-          </div>
-        </main>
-    {% endif %}
-    <!-- End: Content -->
+    <div class={{contentlayout}}>
+      <div class="content_layout">
+        {{ page.content }}
+      </div>              
+    </div>
+  {% endif %}
+  <!-- End: Content -->
 
 
     <!-- Start: Features -->
