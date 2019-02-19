@@ -1,0 +1,56 @@
+@import "variablescolores";
+
+.row-features {
+    display: inline-flex;
+}
+
+.features {
+    border: 0;
+    box-sizing: border-box;
+	font-family: 'Georgia', sans-serif;
+    vertical-align: baseline;
+    word-wrap:break-word;
+    text-align:center;
+    padding: 100px;
+    border-radius:10px;
+    position: relative;    
+}
+
+.feature-1, .feature-2 , .feature-3  {
+    margin: 15px;
+    position:relative;
+    width: auto;
+    margin-right: 8%;
+}
+
+
+.prueba-bloque-dentro {
+    h2 {
+    	font-size: 55px;
+    }
+
+    .block-favorites-list {
+	    -webkit-box-shadow: 12px 10px 22px 2px $blockfavoritesrgba;
+	    -moz-box-shadow: 12px 10px 22px 2px $blockfavoritesrgba;
+	    box-shadow: 12px 10px 22px 2px $blockfavoritesrgba;
+	    padding: 20px;
+
+	    &:hover {
+	    	background: linear-gradient(-45deg, #CBF7F7, #ADF7F7, #CBF7F7, #ffffff);
+			background-size: 400% 400%;
+			-webkit-animation: Flash 15s ease infinite;
+			-moz-animation: Flash 15s ease infinite;
+		    animation: Flash 15s ease infinite;
+	    }
+	}
+
+}
+
+.sidebarfirst {
+    display:inline;
+    margin-right: 8%;
+}
+
+.ihe-overlay--zoom {
+    margin: 10px;
+}

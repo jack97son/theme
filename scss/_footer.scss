@@ -1,0 +1,25 @@
+.row-footer {
+    display: flex;
+    border: 0;
+    box-sizing: border-box;
+	font-family: 'Georgia', sans-serif;
+    vertical-align: baseline;
+    word-wrap:break-word;
+    text-align:center;
+    position: relative;
+    color: aliceblue;
+}
+
+.row-footer {
+    li {
+        list-style: none;
+    }
+}
+
+.footer-1, .footer-2, .footer-3 {
+    margin: 0;
+    border: 0;
+    padding: 10px;
+    position:relative;
+    width: 100%;
+}

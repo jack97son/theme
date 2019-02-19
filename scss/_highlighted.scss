@@ -1,0 +1,19 @@
+@import "variablescolores";
+
+.region-highlighted {
+    margin-top: 0;
+    border: 0;
+    background:$regionrgba;
+}
+
+#block-bloqueportadadebajoheader {
+    height: 850px;
+    max-width: 2000px;
+    text-align: center;
+
+    p, h1, pre {
+    	font-size: 31px;
+	    padding: 65px;
+	    color: rgb(0, 0, 0);
+    }
+}

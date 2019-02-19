@@ -1,0 +1,75 @@
+@import "header";
+@import "content";
+@import "features";
+@import "footer";
+@import "highlighted";
+@import "block";
+@import "blockregion";
+@import "field";
+@import "image";
+@import "table";
+@import "views";
+
+a {
+    text-decoration: none;
+    color: rgb(44, 34, 34);
+}
+
+@keyframes slider {
+    to {
+        background-position: 2000px;
+    }
+}
+
+.toolbar-horizontal {
+    margin: 0;
+}
+
+.align-right {
+    float: none;
+    width: 100%;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+html {
+    margin: 0;
+    /* background-image: url("../images/24089.jpg"); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+} 

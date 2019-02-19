@@ -2,7 +2,7 @@ ejemplo:
   version: VERSION
   css:
     base:
-      css/app.css: {}
+      css/styles.css: {}
       https://unpkg.com/aos@2.3.1/dist/aos.css: { type: external }
   js:
     js/app.js: {}

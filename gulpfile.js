@@ -22,3 +22,7 @@ gulp.task('imagemin', function () {
       }))
       .pipe(gulp.dest('./images'));
 });
+
+gulp.task('watch', function() {
+  gulp.watch('scss/*.scss', gulp.series('sass'));
+});

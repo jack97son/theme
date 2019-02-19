@@ -1,0 +1,54 @@
+
+#block-desdecero-views-block-lista-de-episodios-block-1 {
+
+    h2, select, option {
+    	margin: 0;
+    	font-family: 'Georgia', sans-serif;
+
+    	select {
+    		margin-top: 3%;
+		    margin-bottom: 3%;
+		    width: 10%;
+		    height: 30px;
+		    border-radius: 8px;
+		    background-color: #2da661;
+		    border: 2px solid;
+    	}
+    }
+}
+
+
+.block-favorites-list {
+
+    button, input {
+    	margin: 10px;
+	    font-size: 19px;
+	    border-radius: 96px 0px 149px 0px;
+	    -moz-border-radius: 96px 0px 149px 0px;
+	    -webkit-border-radius: 96px 0px 149px 0px;
+	    border: 0px solid #000000;
+
+	    &:hover {
+	    	background-color: rgba(133,121,133,1);
+		    border-radius: 20px;
+		    border: 2px solid #000000;
+		    color: white;
+	    }
+    }
+
+}
+
+.aver {
+
+    span, h1 {
+    	padding: 10px;
+	    background:rgba(253, 0, 0, 0);
+	    border-radius: 14px;
+	    position: relative;
+	    margin: 0px 100px 50px 100px;
+	    border: 0;
+	    box-sizing: content-box;
+	    text-align: center;
+	    color: black;
+    }
+}

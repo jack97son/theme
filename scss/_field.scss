@@ -1,0 +1,46 @@
+.prueba-titulo {
+    
+    span {
+    	margin: 0;
+	    border: 0;
+	    padding: 10px;
+	    text-align: center;
+	    display: inline;
+    }
+}
+
+.prueba-field {
+    background-color: rgba(255, 255, 255, 0.0);
+    height: 100%;
+    display: inline-block;
+
+    a {
+    	border-radius: 40px;
+	    margin: 5px;
+	    display: inline-flex;
+	    background-color: rgba(255, 255, 255, 0.8);
+	    padding: 5px;
+	    color: black;
+    }
+
+    &:hover {
+    	border: 2px solid rgba(0, 0, 0, 0.829);
+	    border-radius: 40px;
+	    margin: 5px;
+	    display: inline-flex;
+	    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	    padding: 10px;
+	    color: rgb(0, 0, 0);
+    }
+
+    div, img {
+    	height: 100%;
+    	width: 100%;
+    }
+}
+
+.js-quickedit-page-title {
+    font-size: 50px;
+    padding: 65px;
+    color: rgb(185, 98, 98);
+}

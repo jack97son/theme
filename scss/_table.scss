@@ -1,0 +1,25 @@
+@import "variablescolores";
+
+table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: rgb(185, 98, 98);
+    color: #fff;
+    border: 3px solid black;
+    -webkit-box-shadow: 12px 10px 22px 2px $tablergba;
+    -moz-box-shadow: 12px 10px 22px 2px $tablergba;
+    box-shadow: 12px 10px 22px 2px $tablergba;
+    margin: auto;
+    margin-top: 100px;
+
+    td, th {
+        background: #fff;
+        color: #000;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    &:hover {
+        background-color: red;
+    }
+ }

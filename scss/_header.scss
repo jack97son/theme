@@ -1,0 +1,146 @@
+@import "variablescolores";
+
+.layout-container {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to right, $layoutrgba 0%, $layoutrgba1 100%);
+    border: 0;
+    box-sizing: content-box;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+    border-bottom: 5px solid $layoutrgba2;
+}
+
+.row {
+    background:$rowrgba;
+    display: flex;
+}
+
+.header {
+    margin: 0;
+    border: 0;
+    padding: 10px;
+    background:$headerrgba;
+    position:relative;
+    width: 626px;
+}
+
+.menu-principal {
+    margin: 0;
+    border: 0;
+    padding: 10px;
+    background:$menurgba;
+    width: 100%;
+    text-align: center;
+
+    li {
+        list-style: none;
+        font-family: 'Georgia', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        margin: 5px;
+        display: inline-flex;
+        padding: 10px;
+    }
+
+    &:hover {
+        border: 2px solid $menuhoverrgb;
+        border-radius: 10px;
+        margin: 5px;
+        display: inline-flex;
+        color: rgb(0, 0, 0);
+        background-color: $menuhoverrgba;
+        padding: 10px;
+    }
+}
+
+.top-menu {
+    margin: 0;
+    border: 0;
+    padding: 10px;
+    background:$topmenurgba;
+    width: 50%;
+    text-align: center;
+    border-right: none;
+
+    ul {
+        li {
+            list-style: none;
+            font-family: 'Georgia', sans-serif;
+            font-size: 20px;
+            text-align: center;
+            margin: 5px;
+            display: inline-flex;
+            padding: 10px;
+        }
+    }
+
+    &:hover {
+        border: 2px solid $topmenuhoverrgb;
+        border-radius: 10px;
+        margin: 5px;
+        display: inline-flex;
+        color: rgb(0, 0, 0);
+        background-color: $topmenuhoverrgba;
+        padding: 10px;
+    }
+}
+
+.region-top-menu {
+
+    li {
+        list-style: none;
+        font-family: 'Georgia', sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.header-top {
+    margin: 0;
+    border: 0;
+    padding: 15px;
+    background:$headertoprgba;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    font-family: 'Georgia', sans-serif;
+    vertical-align: baseline;
+    word-wrap:break-word;
+    height: 70px;
+}
+
+.background-header {
+    background-image: url("../images/cinta.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+
+.prueba-menu {
+    margin: 0;
+    border: 0;
+    padding: 10px;
+    border-right: 2px solid red;
+    display: inline;
+
+    li {
+        list-style: none;
+        font-family: 'Georgia', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    &:hover {
+        font-size: 20px;
+        text-align: center;
+        background-color:$pruebamenurgb;
+    }
+}
+
+.menu-visually ul {
+    display: inline-flex;
+}
